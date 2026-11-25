@@ -1,12 +1,18 @@
 print("Student Grade Calculator")
 
 # Get marks from the student
-mark1 = float(input("Enter marks for subject 1: "))
-mark2 = float(input("Enter marks for subject 2: "))
-mark3 = float(input("Enter marks for subject 3: "))
+m1 = float(input("Enter marks for subject 1: "))
+m2 = float(input("Enter marks for subject 2: "))
+m3 = float(input("Enter marks for subject 3: "))
+
+
+# Validate marks
+if not (0 <= m1 <= 100 and 0 <= m2 <= 100 and 0 <= m3 <= 100):
+    print("Invalid marks. Enter marks between 0 and 100.")
+    exit()
 
 # Calculate average
-average = (mark1 + mark2 + mark3) / 3
+average = (m1 + m2 + m3) / 3
 
 # Display result
 print("Average marks:", average)
