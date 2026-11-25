@@ -10,3 +10,17 @@ average = (mark1 + mark2 + mark3) / 3
 
 # Display result
 print("Average marks:", average)
+
+# Determine letter grade
+if average >= 90:
+    grade = "A"
+elif average >= 80:
+    grade = "B"
+elif average >= 70:
+    grade = "C"
+elif average >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+print("Letter grade:", grade)
