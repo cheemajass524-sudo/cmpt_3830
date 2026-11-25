@@ -1,4 +1,4 @@
-print("Student Grade Calculator")
+print("Advanced Grade Calculator")
 
 # Get marks from the student
 m1 = float(input("Enter marks for subject 1: "))
