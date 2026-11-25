@@ -15,7 +15,7 @@ if not (0 <= m1 <= 100 and 0 <= m2 <= 100 and 0 <= m3 <= 100):
 average = (m1 + m2 + m3) / 3
 
 # Display result
-print("Average marks:", average)
+print("Average marks:",round(average,2))
 
 # Determine letter grade
 if average >= 90:
@@ -30,3 +30,9 @@ else:
     grade = "F"
 
 print("Letter grade:", grade)
+
+# Determine pass or fail status
+if average >= 60:
+    print("Status: Pass")
+else:
+    print("Status: Fail")
